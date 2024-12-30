@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryxel Grand Prix</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+        }
+    
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+        }
+    </script>
 </head>
 <body>
+    <div class="side-nav" id="sideNav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="rules.html">Regulamentul F1</a>
+        <a href="parts.html">Participanti</a>
+        <a href="rules.html">Sponsori</a>
+        <a href="info.html">Informatii</a>
+        <div class="nav-logo">
+            <img src="F1.png" alt="F1 Logo">
+        </div>
+    </div>
+    
+    <button class="open-nav-btn" onclick="openNav()">☰</button>
+
+
+    
     <div class="container">
         <video autoplay loop muted>
             <source src="gods.mp4" type="video/mp4">
@@ -17,39 +45,9 @@
 
     </div>
     <div class="logos">
-        <img src="F1.png" alt="F1 Logo" class="f1.logo">
+        <img src="F1.png" alt="" class="f1.logo">
         <img src="logo.png" alt="" class="ryxel.logo">
     </div>
-
-    <!-- Sponsor Section -->
-    <section id="sponsors" class="section">
-        <h2>Our Sponsors</h2>
-        <div class="sponsor-logos">
-            <img src="uwu.png" alt="Sponsor 1">
-            <img src="sponsor2.png" alt="Sponsor 2">
-                <img src="sponsor3.png" alt="Sponsor 3">
-        </div>
-    </section>
-
-    <!-- Schedule Section -->
-    <section id="schedule" class="section">
-        <h2>Event Schedule</h2>
-        <ul>
-            <li><strong>Ziua 1:</strong> Inscrierile - 1 Ian- 15 Ian </li>
-            <li><strong>Ziua 2:</strong> Instruirea si antrenarea - 10 Ian - 20 Ian</li>
-            <li><strong>Ziua 3:</strong> Marea Cursa - 1:00 PM to 6:00 PM</li>
-        </ul>
-    </section>
-
-    <!-- Rules Section -->
-    <section id="rules" class="section">
-        <h2>Rules & Regulations</h2>
-        <ol>
-            <li>Toti participantii trebuie sa se inregistreze inainte de data prestabilita</li>
-            <li>Partincipantii trebuie sa respecte regulile F1 tot timpul.</li>
-            <li>Folosirea modificatiilor ilegale pe masini duce la descalificare imediata.</li>
-        </ol>
-    </section>
 
     <footer>
         <p>&copy; 2024 Ryxel Grand Prix. All rights reserved.</p>
