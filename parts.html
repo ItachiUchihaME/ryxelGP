@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participanți F1</title>
+    <link rel="stylesheet" href="parts.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script>
+        // Side Nav Functions
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Button to Open Side Navigation -->
+    <button class="open-nav-btn" onclick="openNav()">☰</button>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="main.html">Acasa</a>
+        <a href="rules.html">Regulamentul F1</a>
+        <a href="sponsors.html">Sponsori</a>
+        <a href="info.html">Informații</a>
+        <div class="nav-logo">
+            <img src="/material/F1.png" alt="F1 Logo">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/material/F1.png" alt="F1 Logo">
+            </div>
+            <h1 class="header-title">Explora participanții din Ryxel Grand Prix</h1>
+        </div>
+    </header>
+    
+
+    <!-- Driver Cards Section -->
+    <section class="drivers-section">
+        <!-- First Driver -->
+        <div class="driver-card">
+            <div class="driver-number">69</div>
+            <img src="/material/catto.jpg" alt="Driver Image" class="driver-image">
+            <div class="driver-info">
+                <span class="driver-name">Unknown Unknown</span>
+                <span class="driver-team">uWu Caffe</span>
+            </div>
+            <div class="driver-flag">
+                <img src="/material/japan.jpg" alt="Flag">
+            </div>
+        </div>
+        <!-- Second Driver -->
+        <div class="driver-card">
+            <div class="driver-number">69</div>
+            <img src="/material/catto.jpg" alt="Driver Image" class="driver-image">
+            <div class="driver-info">
+                <span class="driver-name">Unknown Unknown</span>
+                <span class="driver-team">uWu Caffe</span>
+            </div>
+            <div class="driver-flag">
+                <img src="/material/japan.jpg" alt="Flag">
+            </div>
+        </div>
+        <!-- Third Driver -->
+        <div class="driver-card">
+            <div class="driver-number">69</div>
+            <img src="/material/catto.jpg" alt="Driver Image" class="driver-image">
+            <div class="driver-info">
+                <span class="driver-name">Unknown Unknown</span>
+                <span class="driver-team">uWu Caffe</span>
+            </div>
+            <div class="driver-flag">
+                <img src="/material/japan.jpg" alt="Flag">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ryxel Grand Prix. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

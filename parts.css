@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background-color: #120101; /* F1 bright red */
+    height: 50px; /* Explicit compact height */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Align content to the left */
+    padding: 0 20px; /* Minimal padding */
+    box-shadow: 0 2px 5px rgba(250, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Ensure logo and title align */
+    gap: 10px; /* Space between logo and title */
+    width: 100%;
+}
+
+.logo img {
+    height: 30px; /* Compact logo size */
+    width: auto;
+}
+
+.header-title {
+    font-size: 1.1em; /* Slightly smaller font size */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Drivers Section */
+.drivers-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if the cards don't fit in one row */
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Center the cards horizontally */
+    padding: 40px;
+    margin: 0 auto;
+}
+
+
+/* Driver Card */
+.driver-card {
+    background: white;
+    border: 2px solid #b30000;
+    border-radius: 15px;
+    width: 300px; /* Fixed width */
+    height: 350px; /* Fixed height for square-ish design */
+    margin: 20px auto; /* Center the card horizontally */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out content */
+    box-sizing: border-box; /* Ensure padding doesn’t affect dimensions */
+}
+
+.driver-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner Elements */
+.driver-number {
+    background: #b30000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    align-self: flex-start; /* Align number to the top-left */
+}
+
+.driver-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #b30000;
+    margin: 10px auto;
+}
+
+.driver-info {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.driver-info span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.driver-flag img {
+    width: 25px;
+    height: 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .driver-card {
+        width: 90%; /* Take up more space on smaller screens */
+        height: auto; /* Allow height to adjust */
+    }
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjusted Main content wrapper */
+body > *:not(.header):not(.footer) {
+    flex: 1;
+}
+
+/* Footer stays at the bottom */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+
+/* Side Navigation Bar */
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 100px; /* Pushes the text down */
+    z-index: 1000;
+}
+
+.side-nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ff0000;
+    display: block;
+    transition: 0.3s;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans-serif;
+}
+
+.side-nav a:hover {
+    color: #ff4500;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 20px; /* Position for the close button */
+    right: 25px;
+    font-size: 36px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Open Nav Button */
+.open-nav-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background: #111;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    position: fixed;
+    top: 50px; /* Increased from 15px to 50px */
+    left: 20px;
+    z-index: 1001;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.open-nav-btn:hover {
+    background: #333;
+}
+
+/* Logo at Bottom */
+.nav-logo {
+    position: absolute;
+    bottom: 20px; /* Push the logo to the bottom of the sidebar */
+    width: 100%;
+    text-align: center;
+}
+
+.nav-logo img {
+    max-width: 100px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.nav-logo img:hover {
+    opacity: 1;
+}  
