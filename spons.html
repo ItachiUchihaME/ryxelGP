@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryxel Grand Prix - Sponsori</title>
+    <link rel="stylesheet" href="spons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Side Nav Functions
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Button to Open Side Navigation -->
+    <button class="open-nav-btn" onclick="openNav()">☰</button>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="main.html">Acasa</a>
+        <a href="rules.html">Regulamentul F1</a>
+        <a href="parts.html">Participanti</a>
+        <a href="info.html">Informații</a>
+        <div class="nav-logo">
+            <img src="/material/F1.png" alt="F1 Logo">
+        </div>
+    </div>
+
+    <!-- F1 Logo Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/material/F1.png" alt="F1 Logo">
+            </div>
+            <h1 class="header-title">Sponsori - Ryxel Grand Prix</h1>
+        </div>
+    </header>
+
+    <!-- Eligible Sponsors Section -->
+    <section class="eligible-sponsors">
+        <h2>Lista Sponsorilor Eligibili</h2>
+        <ul>
+            <li>uWu Caffe</li>
+            <li>Pizza This</li>
+            <li>EMS</li>
+            <li>LSPD</li>
+            <li>Hornies</li>
+            <li>Vanilla Unicorn</li>
+        </ul>
+    </section>
+
+    <section class="info">
+        <h2>Cum devii un sponsor acceptat?</h2>
+        <p>
+            Pentru a deveni un sponsor trebuie să dai submit la cererea de înscriere a participantului sub brand-ul tău. 
+            Ulterior, acesta trebuie să aplice individual ca participant după ce cererea de sponsor a fost acceptată. 
+            Odată cu acceptarea ambelor cereri, participantul devine participant oficial și sponsorul devine oficial acceptat. La acceptare o sa primesti si accesul in a procura modelul pe care il doresti ca soferul tau sa o conduca.
+        </p>
+        <div class="info-buttons">
+            <a href="https://forms.gle/exampleSponsorForm" class="btn">Formular Sponsor</a>
+            <a href="https://forms.gle/exampleParticipantForm" class="btn">Formular Participant</a>
+        </div>
+    </section>
+
+    <section class="car-models">
+        <h2>Modele de Mașini Acceptate</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="/material/1st.png" alt="Model 1" class="car-image">
+                <p class="car-price">Free</p>
+            </div>
+            <div class="car-card">
+                <img src="/material/2nd.png" alt="Model 2" class="car-image">
+                <p class="car-price">50,000 USD</p>
+            </div>
+            <div class="car-card">
+                <img src="/material/4th.png" alt="Model 3" class="car-image">
+                <p class="car-price">100,000 USD</p>
+            </div>
+            <div class="car-card">
+                <img src="/material/3rd.png" alt="Model 4" class="car-image">
+                <p class="car-price">150,000 USD</p>
+            </div>
+            <h4 class="attention">Atenție: Modelele nu oferă niciun avantaj în handling sau viteză. Este strict estetic.</h4>
+        </div>
+    </section>
+
+    <!-- Accepted Sponsors Section -->
+    <section class="accepted-sponsors">
+        <h2>Sponsori Acceptați</h2>
+        <div class="sponsor-cards">
+            <div class="sponsor-card">
+                <img src="/material/logo1.png" alt="Sponsor Logo 1" class="sponsor-logo">
+                <p>Sponsor One</p>
+            </div>
+            <div class="sponsor-card">
+                <img src="/material/logo2.png" alt="Sponsor Logo 2" class="sponsor-logo">
+                <p>Sponsor Two</p>
+            </div>
+            <div class="sponsor-card">
+                <img src="/material/logo3.png" alt="Sponsor Logo 3" class="sponsor-logo">
+                <p>Sponsor Three</p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ryxel Grand Prix. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

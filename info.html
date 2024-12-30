@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informații - Ryxel Grand Prix</title>
+    <link rel="stylesheet" href="info.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+        }
+    
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="side-nav" id="sideNav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="main.html">Acasa</a>
+        <a href="rules.html">Regulamentul F1</a>
+        <a href="parts.html">Participanti</a>
+        <a href="spons.html">Sponsori</a>
+
+        <div class="nav-logo">
+            <img src="/material/F1.png" alt="F1 Logo">
+        </div>
+    </div>
+    
+    <button class="open-nav-btn" onclick="openNav()">☰</button>
+
+    <!-- F1 Logo Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/material/F1.png" alt="F1 Logo">
+            </div>
+            <h1 class="header-title">Informații - Ryxel Grand Prix</h1>
+        </div>
+    </header>
+
+    <!-- Time Schedule Section -->
+    <section class="time-schedule">
+        <h2>Programul</h2>
+        <ul>
+            <li><strong>Perioada Înscrierilor:</strong> 1-15 Ianuarie</li>
+            <li><strong>Perioada de Instructaj:</strong> 16-20 Ianuarie</li>
+            <li><strong>Marea Cursă:</strong> 25 Ianuarie</li>
+        </ul>
+    </section>
+
+    <!-- Sponsor's Image Section -->
+    <section class="sponsor-info">
+        <h2>Informații despre Imaginea Sponsorului</h2>
+        <p>
+            Sponsorul va alege mașina la dorință, apoi va primi gratuit un livery pentru mașina respectivă, 
+            atât cât și un set de haine custom pentru șofer. Acesta poate oferi sugestii, dar în mare parte totul ține 
+            de Organizație să facă livery-urile. Ulterior, mini sponsori pot apărea pentru a-și promova imaginea pe mașină. 
+            Astfel de informații vor fi în detaliu discutate odată ce sunteți acceptați ca sponsor.
+        </p>
+    </section>
+
+    <!-- Driver Information Section -->
+    <section class="driver-info">
+        <h2>Informații despre Șofer</h2>
+        <p>
+            Pe perioada de instructaj, șoferul va fi instruit despre cum va decurge cursa și regulile de bază. 
+            În perioada de instructaj, sponsorul va fi nevoit să facă o cerere pentru programarea șoferului, 
+            pentru a se familiariza cu pista înainte de cursă. Mai multe detalii sunt specificate după acceptare.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ryxel Grand Prix. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
